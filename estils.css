@@ -1,0 +1,114 @@
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --color-principal: #5865F2;
+    --color-secundari: #070e58;
+    --color-destacat: #a4f479;
+}
+
+/* TIPOGRAFIA */
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero nav {
+    font-size: 1.7rem;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+footer {
+    color: white;
+}
+
+.hero footer ul{
+    font-size: 1.37rem;
+}
+
+.hero footer p {
+    font-size: 1rem;
+}
+
+.hero a {
+    text-decoration: none;
+    color: var(--color-destacat);
+}
+
+/* LAYOUT */
+
+body {
+    background-image: url(./img/home-hero.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+    text-align: center;
+}
+
+.hero nav {
+    background-color: rgba(7,14,88, 0.7);
+    width: 33.1%;
+    margin: 0 auto;
+    padding: 1.2em 2.8em;
+    margin-top: 0.8em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hero img {
+    width: 33%;
+    margin-top: 6.5em;
+} 
+
+.hero h1 {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0.4em;
+}
+
+.hero footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+}
+
+.hero footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.1em;
+}
+
+.hero footer p {
+    margin-top: 1.4em;
+}
+
