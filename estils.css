@@ -1,4 +1,3 @@
-
 /* RESET */
 
 * {
@@ -10,7 +9,7 @@
 /* VARIABLES */
 
 :root {
-    --color-principal: #5865F2;
+    --color-principal: #5865f2;
     --color-secundari: #070e58;
     --color-destacat: #a4f479;
 }
@@ -18,7 +17,7 @@
 /* TIPOGRAFIA */
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
 
 nav {
@@ -31,20 +30,36 @@ nav a {
     font-size: 1.3rem;
 }
 
+nav a:hover,
+nav a.current-page {
+    color: var(--color-destacat);
+}
+
+nav a.current-page {
+    border-bottom: 1px solid var(--color-destacat);
+}
+
 footer {
     color: white;
 }
 
-a {
-    text-decoration: none;
+a,
+form a {
+    text-decoration: underline dotted;
 }
 
-main, section {
+a:hover {
+    text-decoration: underline solid var(--color-destacat);
+}
+
+main,
+section {
     color: var(--color-secundari);
     font-weight: 300;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--color-secundari);
     text-align: center;
 }
@@ -80,8 +95,35 @@ dt {
     font-weight: 700;
 }
 
-footer ul li{
-    
+fieldset legend {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+input {
+    font-size: inherit;
+}
+
+input[type="date"] {
+    font-size: 0.95rem;
+}
+
+form p {
+    font-size: 1.38rem;
+}
+
+input[type="submit"] {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+footer ul li {
     font-size: 1.4rem;
 }
 
@@ -93,12 +135,15 @@ tr:last-child p {
     font-size: 0.95rem;
 }
 
+footer a {
+    color: white;
+}
+
 /* Estils específics index */
 
 .hero nav {
     font-size: 1.7rem;
 }
-
 
 .hero h1 {
     color: white;
@@ -107,7 +152,7 @@ tr:last-child p {
     line-height: 1.1;
 }
 
-.hero footer ul{
+.hero footer ul {
     font-size: 1.37rem;
 }
 
@@ -115,7 +160,7 @@ tr:last-child p {
     font-size: 1rem;
 }
 
-.hero footer a{
+.hero footer a {
     color: var(--color-destacat);
 }
 
@@ -129,7 +174,7 @@ header {
 }
 
 nav {
-    background: rgba(7,14,88, 0.7);
+    background: rgba(7, 14, 88, 0.7);
     width: 34%;
     margin: 0 auto;
     padding: 1em 0;
@@ -168,7 +213,7 @@ h1 {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
-  }
+}
 
 iframe {
     position: absolute;
@@ -207,12 +252,13 @@ footer {
     padding: 2.6em 0;
 }
 
-footer ul, footer p {
+footer ul,
+footer p {
     width: 73%;
     margin: 0 auto;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: start;
     gap: 1em;
@@ -220,6 +266,10 @@ footer ul{
 
 footer p {
     margin-top: 1em;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 table {
@@ -238,17 +288,134 @@ th {
     border-bottom: 1px solid var(--color-principal);
 }
 
-th, td {
+th,
+td {
     padding: 1em 0;
 }
 
 tr:nth-child(odd):not(:last-child) {
-    background-color: var(--color-destacat); /* Ajusta el color de fondo según tus preferencias */
+    background-color: var(
+        --color-destacat
+    ); /* Ajusta el color de fondo según tus preferencias */
 }
 
 thead td {
-background: white;
+    background: white;
 }
+
+form {
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -30vw;
+    margin-right: -30vw;
+    margin-top: 4.5em;
+}
+
+fieldset {
+    background-color: #dde1fd;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 2em 2.2em 2em 2.2em;
+}
+
+fieldset div {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+
+fieldset div.input-block {
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    padding: 1em 0.8em;
+}
+
+form p {
+    margin: 0.4em 0 1em 0;
+}
+
+select {
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-radio {
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.input-radio input, label {
+    display: inline;
+}
+
+.card-info {
+    display: flex;
+    gap: 0.5em;
+}
+
+.card-info .input-block:first-of-type {
+   width: 80%;
+}
+
+.card-info .input-block:last-of-type {
+   width: 20%;
+}
+
+.address-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.address-info .input-block:first-of-type {
+    width: 100%;
+ }
+
+ .address-info .input-block {
+    width: 32%;
+ }
+ 
+ .text-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+ }
+
+ .text-area label {
+    margin-bottom: 1em;
+ }
+
+ input[type="checkbox"] {
+    margin-top: 2em;
+ }
+
+ input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+    background-color: var(--color-principal);
+ }
+
 
 /* Estils específics index */
 
@@ -271,7 +438,7 @@ body.hero {
     margin-top: 0.8em;
 }
 
-.hero nav ul{
+.hero nav ul {
     justify-content: space-around;
 }
 
@@ -287,7 +454,7 @@ body.hero {
 .hero img {
     width: 33%;
     margin-top: 6.5em;
-} 
+}
 
 .hero h1 {
     /* width: 70%; */
@@ -299,7 +466,7 @@ body.hero {
     background: none;
 }
 
-.hero footer ul{
+.hero footer ul {
     justify-content: center;
     gap: 1.1em;
 }
@@ -307,4 +474,3 @@ body.hero {
 .hero footer p {
     margin-top: 1.4em;
 }
-
