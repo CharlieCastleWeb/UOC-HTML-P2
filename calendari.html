@@ -3,16 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./img/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./estils.css">
         <title>Document</title>
     </head>
     <body>
         <header>
             <nav>
-                <img src="./img/logo.svg" alt="Amped Logo" />
+                <a href="./index.html"><img src="./img/logo.svg" alt="Amped Logo" /></a>
                 <ul>
-                    <li>Informació</li>
-                    <li>Calendari</li>
-                    <li>Entrades</li>
+                    <li><a href="./info.html">Informació</a></li>
+                    <li><a href="./calendari.html">Calendari</a></li>
+                    <li><a href="./tickets.html">Entrades</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,14 +29,13 @@
                 que estiguis ben preparat. Aquí tens el calendari complet perquè
                 no et perdis de cap dels teus artistes preferits.
             </p>
-
+        </main>
+        <section>
             <table>
                 <thead>
                     <tr>
-                        <h3>
-                            Explora les actuacions i planifica la teva
-                            experiència musical
-                        </h3>
+                        <td colspan="7"><h3>Explora les actuacions i planifica la teva
+                            experiència musical</h3></td>
                     </tr>
                     <tr>
                         <th>Data</th>
@@ -117,15 +121,16 @@
                         <td>Info</td>
                     </tr>
                     <tr>
-                        <td>
-                            *Els horaris poden estar subjectes a canvis. Per obtenir
-                            la informació més actualitzada subscriu-te a les nostres
-                            notificacions.
-                        </tr>
+                        <td colspan="7">
+                            <p>*Els horaris poden estar subjectes a canvis. Per obtenir
+                                la informació més actualitzada subscriu-te a les nostres
+                                notificacions.</p>
+                            
+                        </td>
                     </tr>
                 </tbody>
             </table>
-        </main>
+        </section>
         <footer>
             <ul>
                 <li>Avís legal</li>
@@ -133,8 +138,7 @@
                 <li>Política de cookies</li>
             </ul>
             <p>
-                Foto creada por
-                <a href="https://www.midjourney.com/home">Midjourney</a>
+                2023 © Carlos Castillo Martínez
             </p>
         </footer>
     </body>

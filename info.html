@@ -3,16 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./img/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./estils.css">
+        <title>Informació i grups</title>
     </head>
     <body>
         <header>
             <nav>
-                <img src="./img/logo.svg" alt="Amped Logo" />
+                <a href="./index.html"><img src="./img/logo.svg" alt="Amped Logo" /></a>
                 <ul>
-                    <li>Informació</li>
-                    <li>Calendari</li>
-                    <li>Entrades</li>
+                    <li><a href="./info.html">Informació</a></li>
+                    <li><a href="./calendari.html">Calendari</a></li>
+                    <li><a href="./tickets.html">Entrades</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,16 +29,19 @@
                 inicis el 2018, ha crescut exponencialment, convertint-se en un
                 esdeveniment anual esperat per fanàtics i artistes per igual.
             </p>
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/0r2vRoy0GTk?si=tuDhu4tliPCXWWBI&amp;controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
-
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/0r2vRoy0GTk?si=tuDhu4tliPCXWWBI&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+        <section>
             <h2>Caps de cartell</h2>
             <p>
                 Cada any, l'Amped Festival s'enorgulleix de presentar una
@@ -44,19 +52,18 @@
             <dl>
                 <dt>Los Rayos</dt>
                 <dd>
-                    <p>Gènere: Hard Rock Descripció: Pioners del hard rock</p>
-                    <p>
-                        Los Rayos són coneguts per la seva energia elèctrica a
+                    <p><strong>Gènere:</strong> Hard Rock </p> 
+                    <p><strong>Descripció:</strong> Pioners del hard rock, Los Rayos són coneguts per la seva energia elèctrica a
                         l'escenari i la seva habilitat per fer vibrar
                         l'audiència amb els seus riffs potents i lletres
                         apassionades.
                     </p>
                 </dd>
-                <dt>Sirenes Elèctriques</dt>
+                <dt>Sirenes Elèctricas</dt>
                 <dd>
-                    <p>Gènere: Punk Rock</p>
+                    <p><strong>Gènere:</strong> Punk Rock</p>
                     <p>
-                        Descripció: Una banda femenina de punk rock que ha pres
+                        <strong>Descripció:</strong> Una banda femenina de punk rock que ha pres
                         l'escena per assalt. Amb lletres poderoses i ritmes
                         contagiosos, les Sirenes Elèctriques són una força a
                         tenir en compte en el món del rock.
@@ -64,18 +71,18 @@
                 </dd>
                 <dt>The Echoes</dt>
                 <dd>
-                    <p>Gènere: Classic Rock</p>
+                    <p><strong>Gènere:</strong> Classic Rock</p>
                     <p>
-                        Descripció: Reverenciant els sons clàssics de l'era
+                        <strong>Descripció:</strong> Reverenciant els sons clàssics de l'era
                         daurada del rock, The Echoes combinen magistralment
                         guitarres vintage amb vocals harmonioses.
                     </p>
                 </dd>
                 <dt>StrumLords</dt>
                 <dd>
-                    <p>Gènere: Indie Rock</p>
+                    <p><strong>Gènere:</strong> Indie Rock</p>
                     <p>
-                        Descripció: Una barreja refrescant de sons indie amb un
+                        <strong>Descripció:</strong> Una barreja refrescant de sons indie amb un
                         pessic de folk, StrumLords ofereix una experiència
                         auditiva relaxant amb música acústica i lletres
                         poètiques.
@@ -83,15 +90,16 @@
                 </dd>
                 <dt>Guitar Glare</dt>
                 <dd>
-                    <p>Gènere: Rock ‘n’ Roll</p>
+                    <p><strong>Gènere:</strong> Rock ‘n’ Roll</p>
                     <p>
-                        Descripció: Mantenint-lo clàssic amb un toc modern,
+                        <strong>Descripció:</strong> Mantenint-lo clàssic amb un toc modern,
                         Guitar Glare rendeix homenatge al rock 'n' roll
                         tradicional mentre introdueix elements contemporanis.
                     </p>
                 </dd>
             </dl>
-        </main>
+        </section>
+        
         <footer>
             <ul>
                 <li>Avís legal</li>
@@ -99,8 +107,7 @@
                 <li>Política de cookies</li>
             </ul>
             <p>
-                Foto creada por
-                <a href="https://www.midjourney.com/home">Midjourney</a>
+                2023 © Carlos Castillo Martínez
             </p>
         </footer>
     </body>
